@@ -1,0 +1,12 @@
+#!/bin/bash
+curl -s 'http://www.idcloak.com/proxylist/free-us-proxy-list.html' > id.html;
+cat id.html 				 | 
+grep -oP '(?<=td>)[^</td>]*' |
+grep -v '[a-z]' > temp.txt;
+awk 'NR % 2 == 0' temp.txt > ipTemp.txt; 	 	# this is the ip
+sed -n 1~2p temp.txt > portTemp.txt;      		# this is the port
+paste ipTemp.txt portTemp.txt > id.txt; 
+cat id.txt 					 | 
+sed -e 's/\s\+/:/g' 		 |
+sed '/^$/d' > /var/www/html/strip/id.txt;
+rm -rf id.html id.txt ipTemp.txt portTemp.txt temp.txt;

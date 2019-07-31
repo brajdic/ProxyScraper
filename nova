@@ -1,0 +1,8 @@
+#!/bin/bash
+curl -s 'https://www.proxynova.com/proxy-server-list/port-8080/' > nova.html;
+cat nova.html 					  | 
+grep -oP '(?<=abbr title=")[^"]*' |
+sed -e 's/$/:8080/' > nova.txt;
+sed '/[A-Za-z]*/d' nova.txt;
+grep -v '[a-z]' nova.txt > /var/www/html/strip/nova.txt;
+rm -rf nova.txt nova.html;

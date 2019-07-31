@@ -1,0 +1,7 @@
+#!/bin/bash
+./ushttp
+./ssl
+./nova
+./gmp
+./id
+cat /var/www/html/strip/us.txt <(echo) /var/www/html/strip/ssl.txt <(echo) /var/www/html/strip/nova.txt <(echo) /var/www/html/strip/g.txt <(echo) /var/www/html/strip/id.txt| sed '/^$/d' > /var/www/html/strip/all.txt

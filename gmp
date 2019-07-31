@@ -1,0 +1,16 @@
+#!/bin/bash
+curl -s 'http://givemeproxy.com/' > g.html;
+cat g.html 					 | 
+grep -oP '(?<=td class="column-1">)[^</td>]*' | 
+sed 's/[A-Za-z]*//g' 		 |
+sed '/^$/d' > gIP.txt;
+cat g.html 					 | 
+grep -oP '(?<=td class="column-2">)[^</td>]*' | 
+sed 's/[A-Za-z]*//g' 		 |
+sed '/^$/d' > gPort.txt;
+paste gIP.txt gPort.txt > g.txt
+cat g.txt | 
+sed -e 's/\s\+/:/g' |
+sed '/^$/d' > /var/www/html/strip/g.txt;
+truncate -s-2 /var/www/html/strip/g.txt;
+rm -rf g.html g.txt gIP.txt gPort.txt;
