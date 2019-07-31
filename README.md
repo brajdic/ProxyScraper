@@ -1,4 +1,2 @@
 # ProxyScraper
-Scrapes public proxies
-
-Will be updated with a GUI soon™.
+Proxy scarper built entirely in bash. Curerently very alpha design; GUI and other featuers coming "soon™".
