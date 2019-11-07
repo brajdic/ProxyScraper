@@ -3,6 +3,6 @@ Proxy scarper is a CLI tool built entirely in bash to extract proxies from vario
 
 Sample contents of file:
 
- ![](http://emma.wtf/strip/sample.png)
+ ![](http://emma.wtf/strip/ps.png)
  
 <i>Configured specifically to work with my own private server.</i>
