@@ -1,5 +1,5 @@
 # ProxyScraper
-Proxy scarper built entirely in bash. Curerently <b>very</b> alpha design; GUI and other featuers coming "soon™".
+Proxy scarper is a CLI tool built entirely in bash to extract proxies from various website. Curerently <b>very</b> alpha design; GUI and other featuers coming "soon™".
 
 Sample contents of file:
 
