@@ -12,3 +12,4 @@ sed 's/\\//g' 				 |
 sed '/^$/d' > /var/www/html/strip/us.txt;
 truncate -s-2 /var/www/html/strip/us.txt;
 rm -rf us.html;
+echo "Finished US HTTP..."

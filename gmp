@@ -14,3 +14,4 @@ sed -e 's/\s\+/:/g' |
 sed '/^$/d' > /var/www/html/strip/g.txt;
 truncate -s-2 /var/www/html/strip/g.txt;
 rm -rf g.html g.txt gIP.txt gPort.txt;
+echo "Finished GMP...";

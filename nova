@@ -6,3 +6,4 @@ sed -e 's/$/:8080/' > nova.txt;
 sed '/[A-Za-z]*/d' nova.txt;
 grep -v '[a-z]' nova.txt > /var/www/html/strip/nova.txt;
 rm -rf nova.txt nova.html;
+echo "Finished Nova...";

@@ -1,4 +1,5 @@
 #!/bin/bash
+echo "Starting Id (this will take a few seconds)...";
 curl -s 'http://www.idcloak.com/proxylist/free-us-proxy-list.html' > id.html;
 cat id.html 				 | 
 grep -oP '(?<=td>)[^</td>]*' |
@@ -10,3 +11,4 @@ cat id.txt 					 |
 sed -e 's/\s\+/:/g' 		 |
 sed '/^$/d' > /var/www/html/strip/id.txt;
 rm -rf id.html id.txt ipTemp.txt portTemp.txt temp.txt;
+echo "Finished Id...";

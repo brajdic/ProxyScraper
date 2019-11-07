@@ -12,3 +12,4 @@ sed 's/\\//g' 				 |
 sed '/^$/d' > /var/www/html/strip/ssl.txt;
 truncate -s-2 /var/www/html/strip/ssl.txt;
 rm -rf ssl.html;
+echo "Finished SSL...";
