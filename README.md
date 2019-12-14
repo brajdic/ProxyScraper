@@ -1,5 +1,7 @@
 # ProxyScraper
-Proxy scarper is a CLI tool built entirely in bash to extract proxies from various website. Curerently <b>very</b> alpha design; GUI and other features coming "soon™".
+Proxy Scraper is a CLI tool built entirely in bash to extract proxies from various website.  <strike>Curerently <b>very</b> alpha design; GUI and other features coming "soon™". </strike>
+
+The updated <b>Java version</b> has been uploaded here: https://github.com/brajdic/ProxyScraper-Java
 
 Current Proxy sites supported:
 > http://www.idcloak.com
