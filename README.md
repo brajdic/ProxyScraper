@@ -3,12 +3,12 @@ Proxy Scraper is a CLI tool built entirely in bash to extract proxies from vario
 
 The updated <b>Java version</b> has been uploaded here: https://github.com/brajdic/ProxyScraper-Java
 
-Current Proxy sites supported:
-> http://www.idcloak.com
+Proxy sites currently supported:
+> http://www.idcloak.com/
 
 > http://givemeproxy.com/
 
-> https://www.proxynova.com
+> https://www.proxynova.com/
  
 > https://www.us-proxy.org/
 
